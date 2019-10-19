@@ -1,0 +1,26 @@
+.body
+{
+    margin: 0px;
+    background-color: #242424;
+}
+.css
+{
+display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d6d6d6;
+}
+.css2
+{
+    display: grid;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+color: #d6d6d6;
+}
+.block_1
+{
+    margin-top: 50px;
+}
+
