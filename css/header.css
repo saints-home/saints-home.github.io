@@ -15,7 +15,7 @@
 {
     padding: 3px;
     display:  flex;
-    width: 125px;
+    width: 200px;
     height: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
@@ -35,6 +35,13 @@
     display: flex;
     justify-content: flex-start;
 }
+.boxmid
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+j}
 .boxright
 {
     margin-right: 10px;
@@ -46,7 +53,7 @@ j}
 {
     padding: 3px;
     display:  flex;
-    width: 100px;
+    width: 75px;
     height: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
