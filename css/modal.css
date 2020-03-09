@@ -62,7 +62,7 @@ body{
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    top: 20%;
+    top: 10%;
 }
 /* элементы модального окна */
 .modal-dialog {
