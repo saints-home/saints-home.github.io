@@ -1,11 +1,83 @@
 .footer
 {
-    display: grid;
+    display: block;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 400;
     width: 100%;
-    height: 50px;
+    height: 500px;
     background-color: #373737;;
 }
-
+.footerBoxs
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imageFooterBox
+{
+    display: flex;
+    min-height: 30px;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+.textFooterBox
+{
+    display: block;
+    min-height: 30px;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+.imageFooterUser
+{
+    width: 400;
+    height: 400;
+    margin: auto;
+}
+.textNandDBox
+{
+    height: 60%;
+}
+.textSocialBox
+{
+    height: 60%;
+}
+.textName
+{
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 80 0 0 40;
+}
+.textDiscription
+{
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 20 0 0 40;
+}
+.textSocial
+{
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0 0 0 40;
+}
+.linkSocial
+{
+    padding: 5 10 0 0;
+    height: 40px;
+    width: 40px;
+}
