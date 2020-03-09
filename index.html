@@ -4,28 +4,80 @@
 <link href="css/header.css" rel="stylesheet">
 <link href="css/body.css" rel="stylesheet">
 <link href="css/footer.css" rel="stylesheet">
+<link href="css/modal.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <header class='header'>
-        <div class='boxleft'>
-            <a class='link'  href='zakaz.html'>Заказ</a>
-        </div>
-       <div class="boxmid">
-            <a class='Saints-home-page'  href='index.html'>LOGO SITE</a>
-           </div>
-        <div class="boxright">
-            <a class='link'  href='onas.html'>О сайте</a>
-        </div>
-    </header>
+    <div class='boxleft'>
+        <label title="Заказ" class="link" for="modal-2">Заказ</label>
+    </div>
+    <div class="boxmid">
+        <a href='index.html'><label title="Изображения в модальном окне" class="Saints-home-page" for="modal-3">Saint</label></a>
+    </div>
+    <div class='boxright'>
+        <label title="О сайте" class="link" for="modal-1">О сайте</label>
+    </div>
+</header>
 <body class="body">
-<div class='block_1'>
-<div class='css'>
-        Главная страница
-</div>
-<div class='css2'>
-        Главная страница
-</div>
-</div>
+    <!-- Modal One -->
+<div class="modal">
+    <input class="modal-open" id="modal-1" type="checkbox" hidden>
+    <div class="modal-wrap" aria-hidden="true" role="dialog">
+      <label class="modal-overlay" for="modal-1"></label>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h2>О сайте</h2>
+          <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+        </div>
+        <div class="modal-body">
+          <p>Информация о сайте</p>
+        </div>
+        <div class="modal-footer">
+          <label class="btn btn-primary" for="modal-1">Закрыть</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Two -->
+<div class="modal">
+    <input class="modal-open" id="modal-2" type="checkbox" hidden>
+    <div class="modal-wrap" aria-hidden="true" role="dialog">
+      <label class="modal-overlay" for="modal-2"></label>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h2>Заказ</h2>
+          <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
+        </div>
+        <div class="modal-body">
+            <form style="margin-block-end: 0;">
+               <input name="name" placeholder="* Укажите ваше имя" class="textbox" required />
+               <input name="emailaddress" placeholder="* Укажите ваш Email" class="textbox" type="email" required />
+               <textarea rows="4" cols="50" name="subject" placeholder="* Введите ваше сообщение:" class="message" required></textarea>
+                <input name="submit" class="btn btn-form" type="submit" value="Отправить" />
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Three -->
+  <div class="modal">
+    <input class="modal-open" id="modal-3" type="checkbox" hidden>
+    <div class="modal-wrap" aria-hidden="true" role="dialog">
+      <label class="modal-overlay" for="modal-3"></label>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h2>You make my love go...</h2>
+          <label class="btn-close" for="modal-3" aria-hidden="true">×</label>
+        </div>
+        <div class="modal-body">
+          <img src="image/footeruser.png">
+        </div>
+        <div class="modal-footer">
+          <label class="btn btn-primary" for="modal-3">Отлично!</label>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <footer class="footer">
     <div class="footerBoxs">
