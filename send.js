@@ -8,6 +8,6 @@ function otpravka(token,text,chatid){
   var z=$.ajax({
   type: "POST",  
   url: "https://api.telegram.org/bot"+token+"/sendMessage?chat_id="+chatid,
-  data: "parse_mode=HTML&text="+encodeURIComponent(text), 
+  data: "parse_mode=HTML&text="+encodeURIComponent(text),
   }); 
  };
