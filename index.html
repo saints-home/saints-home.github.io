@@ -6,6 +6,7 @@
 <link href="css/body.css" rel="stylesheet">
 <link href="css/footer.css" rel="stylesheet">
 <link href="css/modal.css" rel="stylesheet">
+<link href="css/zakaz.css" rel="stylesheet">
 <script src="send.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
@@ -51,12 +52,17 @@
           <h2>Заказ</h2>
           <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
         </div>
-        <form aria-disabled="true">
-          <input id="name" onkeyup="check();" placeholder="Укажите ФИО" required>
-          <input id="phone" onkeyup="check();" placeholder="Укажите phone" required>
-          <textarea rows=12 cols=40 id="message" onkeyup="check();" placeholder="Укажите message" required></textarea>
-          <button id="send" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</button>
-        </form>
+        <div id="formSend" class="inputForm">
+          <input class="inputForm" id="name" onkeyup="check();" placeholder="Укажите ФИО" required/>
+          <input class="inputForm" id="phone" onkeyup="check();" placeholder="Укажите phone" required/>
+          <textarea class="textAreaForm" rows=12 cols=40 id="message" onkeyup="check();" placeholder="Укажите message" required></textarea>
+          <button class="btn btn-primary" id="send" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</button> 
+        </div>
+        <div id="formSendGoal">
+          <div class="textSendGoal">Номер вашей заявки: 12345</div>
+          <div class="textSendGoal">Ваше сообщение</div>
+          <div class="textSendGoal">Успешно отправлено</div>
+        </div>
       </div>
     </div>
   </div>

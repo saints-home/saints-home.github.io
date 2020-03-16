@@ -1,0 +1,31 @@
+.inputForm
+{
+    display: block;
+    width: 100%;
+}
+.textAreaForm
+{
+    display: block;
+    width: 100%;
+}
+#send
+{
+    display: block;
+    width: 50%;
+    margin: auto;
+    height: 35px;
+}
+#formSendGoal
+{
+   display: none;
+   height: 250px;
+   width: 100%;
+}
+.textSendGoal
+{
+    padding-top: 32px;
+    color: aliceblue;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+}
