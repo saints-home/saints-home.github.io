@@ -51,18 +51,12 @@
           <h2>Заказ</h2>
           <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
         </div>
-        <form>
-          <input id="name" type="text" onkeyup="check();" placeholder="Укажите ФИО" required>
-          <input id="phone" type="text" onkeyup="check();" placeholder="Укажите phone" required>
-          <select name="select" onkeyup="check();" required>
-            <option>- none -</option> 
-            <option value="value1">Значение 1</option> 
-            <option value="value2">Значение 2</option>
-            <option value="value3">Значение 3</option>
-          </select>
-          <textarea rows=12 cols=40 id="message" type="text" onkeyup="check();" placeholder="Укажите message" required></textarea>
-          <input id="send" width="100%" value="SEND" onclick='otpravka(token,chatid,/\r?\n/);' disabled>
-          </form>
+        <form aria-disabled="true">
+          <input id="name" onkeyup="check();" placeholder="Укажите ФИО" required>
+          <input id="phone" onkeyup="check();" placeholder="Укажите phone" required>
+          <textarea rows=12 cols=40 id="message" onkeyup="check();" placeholder="Укажите message" required></textarea>
+          <button id="send" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</button>
+        </form>
       </div>
     </div>
   </div>
