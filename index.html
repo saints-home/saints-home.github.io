@@ -53,9 +53,11 @@
           <h2>Заказ</h2>
           <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
         </div>
-        <div class="modal-body">
-          <div class="elfsight-app-4d225f46-fa69-417b-8c40-c47aa0042b55"></div>
-        </div>
+        <form method="post">
+          <input id="name" type="text" name="name" placeholder="Укажите ФИО" required>
+          <input id="phone" type="text" name="phone" placeholder="Укажите phone" required>
+          <input onclick="otpravka(token,text,chatid)" type="submit" value="Отправить">
+          </form>
       </div>
     </div>
   </div>
