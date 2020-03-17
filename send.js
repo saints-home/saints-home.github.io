@@ -7,8 +7,9 @@ function otpravka(token,chatid,new_line){
   var src = document.getElementById("message").value;
   var text = src.split(new_line || "%0A");
   var text2 = text.join("%0A");
+  var date = new Date();
   var number = Math.random() * 1000000000;
-  var number2 = 'N' + number.toFixed(0);
+  var number2 = 'N' + number.toFixed(0) + "." + date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
   var text3 = "Номер заявки: " + number2 + "%0A" + "ФИО: " + names + "%0A" + "Телефон: " + phones + "%0A" + "Сообщение:%0A" + text2;
   var z=$.ajax({
   type: "POST",  
