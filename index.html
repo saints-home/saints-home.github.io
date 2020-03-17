@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 <header class='header'>
     <div class='boxleft'>
-        <label title="Заказ" class="link" for="modal-2">Заказ</label>
+        <label title="Сообщение" class="link" for="modal-2">Сообщение</label>
     </div>
     <div class="boxmid">
         <a href='index.html'><label title="Изображения в модальном окне" class="Saints-home-page" for="modal-3">Saint</label></a>
@@ -49,19 +49,25 @@
       <label class="modal-overlay" for="modal-2"></label>
       <div class="modal-dialog">
         <div class="modal-header">
-          <h2>Заказ</h2>
+          <h2>Сообщение</h2>
           <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
         </div>
-        <div id="formSend" class="inputForm">
+        <div id="formSend">
           <input class="inputForm" id="name" onkeyup="check();" placeholder="Укажите ФИО" required/>
           <input class="inputForm" id="phone" onkeyup="check();" placeholder="Укажите phone" required/>
           <textarea class="textAreaForm" rows=12 cols=40 id="message" onkeyup="check();" placeholder="Укажите message" required></textarea>
           <button class="btn btn-primary" id="send" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</button> 
         </div>
         <div id="formSendGoal">
+<<<<<<< HEAD
           <div class="textSendGoal">Ваша заявка</div>
           <div class="textSendGoal">Успешно отправлена</div>
           <div id="numberZakaz" class="textSendGoal"></div>
+=======
+          <div class="textSendGoal">Ваше сообщение</div>
+          <div class="textSendGoal">Успешно отправлено</div>
+          <div class="textSendGoal">Номер: 12345</div>
+>>>>>>> ea37b48a5171229f70a24a27cbc08f0145c5fbef
         </div>
       </div>
     </div>
