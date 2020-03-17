@@ -3,10 +3,11 @@
     display: block;
     width: 100%;
 }
-.inputForm2
+#formSend
 {
     display: block;
     width: 100%;
+    margin: 20px;
 }
 .textAreaForm
 {
