@@ -53,10 +53,13 @@
           <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
         </div>
         <div id="formSend">
-          <input class="inputForm" id="name" onkeyup="check();" placeholder="Укажите ФИО" required/>
-          <input class="inputForm" id="phone" onkeyup="check();" placeholder="Укажите phone" required/>
-          <textarea class="textAreaForm" rows=12 cols=40 id="message" onkeyup="check();" placeholder="Укажите message" required></textarea>
-          <button class="btn btn-primary" id="send" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</button> 
+          <label class="labelText">ФИО</label>
+          <input class="inputForm" id="name" onkeyup="check();" required/>
+          <label class="labelText">Телефон</label>
+          <input class="inputForm" id="phone" onkeyup="check();" required/>
+          <label class="labelText">Сообщение</label>
+          <textarea class="textAreaForm" id="message" onkeyup="check();" required></textarea>
+          <button id="send" class="sendDisabled" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</button> 
         </div>
         <div id="formSendGoal">
           <div class="textSendGoal">Ваша заявка</div>

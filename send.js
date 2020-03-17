@@ -29,5 +29,24 @@ function otpravka(token,chatid,new_line){
   var inp1 = document.getElementById('name'),
       inp2 = document.getElementById('phone'),
       inp3 = document.getElementById('message');
-  document.getElementById('send').disabled = inp1.value && inp2.value && inp3.value ? false : "disabled";
+  if (inp1.value == "")
+  {
+    document.getElementById('send').disabled = true;
+    document.getElementById('send').className = "sendDisabled";
+  }
+  if (inp2.value == "")
+  {
+    document.getElementById('send').disabled = true;
+    document.getElementById('send').className = "sendDisabled";
+  }
+  if (inp3.value == "")
+  {
+    document.getElementById('send').disabled = true;
+    document.getElementById('send').className = "sendDisabled";
+  }
+  if (inp1.value != "" && inp2.value != "" && inp3.value != "")
+  {
+    document.getElementById('send').disabled = false;
+    document.getElementById('send').className = "sendEnabled";
+  }
 };
