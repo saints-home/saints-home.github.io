@@ -7,7 +7,7 @@
 */
 body{
     font-family: Ubuntu;
-    background: #dadada;
+    background: #ffffff;
 }
 /* Стили модального окна */
 .modal-header h2 {
@@ -66,8 +66,8 @@ body{
 }
 /* элементы модального окна */
 .modal-dialog {
-    background: #ececec;
-    border: #ececec solid 1px;
+    background: #ffffff;
+    border: #000000 solid 1px;
     border-radius: 5px;
     position: fixed;
     left: 50%;
@@ -86,7 +86,7 @@ body{
 }
 .modal-body {
   padding: 20px;
-  color: #ffffff;
+  color: #000000;
 }
 .modal-body p {
     margin: 0;
@@ -99,18 +99,18 @@ body{
 
 .modal-footer {
     padding: 10px 10px;
-    background: linear-gradient(to top, #eaeaea, #eaeaea);
+    background: linear-gradient(to top, #ffffff, #ffffff);
     text-align: center;
 }
 .modal-header {
-    border-bottom: #eaeaea solid 0px;
+    border-bottom: #000000 solid 0px;
 }
 .modal-header h2 {
     font-size: 16px;
     margin: 0;
 }
 .modal-footer {
-    border-top: #eaeaea solid 0px;
+    border-top: #ffffff solid 0px;
     text-align: right;
 }
 /* адаптивные картинки в модальном блоке */
@@ -154,7 +154,7 @@ body{
     font-size:14px; 
     padding:8px;
     margin-bottom:20px;
-    background: #eaeaea;
+    background: #ffffff;
     color: #000000;
 }
 .message:focus,
@@ -177,7 +177,7 @@ body{
     padding:10px;
     margin-bottom:20px;
     overflow:hidden;
-    background: #eaeaea;
+    background: #ffffff;
     color: #ffffff;
 }
 /* кнопка "отправить" формы */

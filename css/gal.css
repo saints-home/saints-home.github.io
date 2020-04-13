@@ -1,11 +1,11 @@
 .galbody {
     display: flex;
-    background: #eaeaea;
+    background: #ffffff;
     margin: 30;
 }
 .buttons
 {
-    color: white;
+    color: #ffffff;
     background: transparent;
     border: none;
 }
