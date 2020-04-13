@@ -7,12 +7,12 @@
 */
 body{
     font-family: Ubuntu;
-    background: #373737;
+    background: #dadada;
 }
 /* Стили модального окна */
 .modal-header h2 {
-    color: #ffffff;  
-    font-size: 20px;
+    color: #000000;  
+    font-size: 16px;
     font-weight: normal;
     line-height: 1;    
     margin: 0;
@@ -20,7 +20,7 @@ body{
 }
 /* кнопка закрытия окна */
 .modal .btn-close {
-    color: #aaa;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 30px;
     text-decoration: none;
@@ -66,8 +66,8 @@ body{
 }
 /* элементы модального окна */
 .modal-dialog {
-    background: #373737;
-    border: #555555 solid 1px;
+    background: #ececec;
+    border: #ececec solid 1px;
     border-radius: 5px;
     position: fixed;
     left: 50%;
@@ -91,15 +91,22 @@ body{
 .modal-body p {
     margin: 0;
 }
-.modal-header,
+.modal-header {
+    padding: 10px 10px;
+    background: linear-gradient(to top, #c7c7c7, #eaeaea);
+    text-align: center;
+}
+
 .modal-footer {
-    padding: 20px 20px;
+    padding: 10px 10px;
+    background: linear-gradient(to top, #eaeaea, #eaeaea);
+    text-align: center;
 }
 .modal-header {
     border-bottom: #eaeaea solid 0px;
 }
 .modal-header h2 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
 }
 .modal-footer {
@@ -147,8 +154,8 @@ body{
     font-size:14px; 
     padding:8px;
     margin-bottom:20px;
-    background: #000000;
-    color: #ffffff;
+    background: #eaeaea;
+    color: #000000;
 }
 .message:focus,
 .textbox:focus{
@@ -170,7 +177,7 @@ body{
     padding:10px;
     margin-bottom:20px;
     overflow:hidden;
-    background: #000000;
+    background: #eaeaea;
     color: #ffffff;
 }
 /* кнопка "отправить" формы */
