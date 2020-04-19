@@ -1,26 +1,25 @@
-.body
-{
+.body {
     margin: 70px 0px 0px 0px;
-    background-color: #ffffff;
+    background-color: silver;
 }
-.css
-{
+
+.css {
     display: block;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: #ffffff;
 }
-.css2
-{
+
+.css2 {
     display: grid;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 400;
-color: #ffffff;
+    color: #ffffff;
 }
-.block_1
-{
+
+.block_1 {
     margin-top: 50px;
     margin-top: 50px;
 }

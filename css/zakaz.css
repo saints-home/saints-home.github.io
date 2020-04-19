@@ -1,33 +1,34 @@
-.inputForm
-{
+.inputForm {
     display: block;
     width: 100%;
     background: #ffffff;
     color: #000000;
     font-size: 20px;
-    border: 1px double #000000; /* Параметры границы */
+    border: 1px double #000000;
+    /* Параметры границы */
     font-family: Ubuntu;
     padding: 10px;
 }
-#formSend
-{
+
+#formSend {
     display: block;
     margin: 0px 20px 20px 20px;
 }
-.textAreaForm
-{
+
+.textAreaForm {
     display: block;
     width: 100%;
     background: #ffffff;
     color: #000000;
     font-size: 20px;
-    border: 1px double #000000; /* Параметры границы */
+    border: 1px double #000000;
+    /* Параметры границы */
     font-family: Ubuntu;
     padding: 10px;
     height: 125px;
 }
-.sendDisabled
-{
+
+.sendDisabled {
     display: block;
     width: 50%;
     margin: 20 auto auto auto;
@@ -36,6 +37,7 @@
     border: #ffffff00;
     color: #000000;
 }
+
 .sendEnabled {
     background: #428bca;
     color: #fff;
@@ -45,25 +47,26 @@
     margin: 20 auto auto auto;
     height: 35px;
 }
-.sendEnabled:hover{
+
+.sendEnabled:hover {
     background: #66A1D3;
 }
-#formSendGoal
-{
-   display: none;
-   height: 250px;
-   width: 100%;
+
+#formSendGoal {
+    display: none;
+    width: 100%;
+    margin: 25px;
 }
-.textSendGoal
-{
-    padding-top: 32px;
+
+.textSendGoal {
     color: #000000;
     text-align: center;
     font-family: Ubuntu;
     font-size: 25px;
+    width: 275px;
 }
-.labelText
-{
+
+.labelText {
     display: block;
     color: #000000;
     font-family: Ubuntu;
