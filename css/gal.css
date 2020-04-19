@@ -1,19 +1,24 @@
 #artBody {
     display: block;
-    background: #ffffff;
-    margin: 30;
+    margin: auto;
+    width: 100px;
+    margin-top: 75%;
 }
 
 #photoBody {
     display: block;
-    background: #ffffff;
-    margin: 30;
+    margin: auto;
+    width: 100px;
+    margin-top: 75%;
 }
 
 .buttons {
-    color: black;
+    color: aliceblue;
     background: transparent;
     border: none;
+    font-size: 40px;
+    height: 59px;
+    outline: none;
 }
 
 .imgbody {

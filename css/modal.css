@@ -28,17 +28,31 @@ body {
 /* кнопка закрытия окна */
 
 .modal .btn-close {
-    color: rgb(0, 0, 0);
+    color: black;
     cursor: pointer;
     font-size: 30px;
     text-decoration: none;
     position: absolute;
-    right: 5px;
+    right: 10px;
     top: 0;
 }
 
 .modal .btn-close:hover {
     color: red;
+}
+
+.modal .btn-close-img {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 40px;
+    text-decoration: none;
+    position: absolute;
+    right: -20px;
+    top: -33px;
+}
+
+.modal .btn-close-img:hover {
+    color: aliceblue;
 }
 
 
@@ -47,7 +61,7 @@ body {
 .modal-wrap:before {
     content: "";
     display: none;
-    background: rgba(0, 0, 0, 0.6);
+    background: #000000d1;
     position: fixed;
     top: 0;
     left: 0;
@@ -82,12 +96,20 @@ body {
     top: 10%;
 }
 
+.modal-open:checked~.modal-wrap .modal-dialog-img {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 10%;
+}
+
 
 /* элементы модального окна */
 
 .modal-dialog {
-    background: #ffffff;
-    border: #000000 solid 1px;
+    background: aliceblue;
+    border: #000000 solid 0px;
     border-radius: 5px;
     position: fixed;
     left: 50%;
@@ -101,6 +123,28 @@ body {
     -o-transition: -o-transform 0.4s ease-out;
     transition: transform 0.4s ease-out;
     z-index: 103;
+    border-radius: 15px;
+}
+
+.modal-dialog-img {
+    background: aliceblue;
+    border: #000000 solid 0px;
+    border-radius: 5px;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    z-index: 103;
+    border-radius: 15px;
+    width: 800px;
+    height: 600px;
 }
 
 .modal-body {
@@ -114,8 +158,10 @@ body {
 
 .modal-header {
     padding: 10px 10px;
-    background: linear-gradient(to top, #c7c7c7, #eaeaea);
+    background: linear-gradient(to top, silver, aliceblue);
     text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .modal-footer {

@@ -1,13 +1,18 @@
 .inputForm {
     display: block;
     width: 100%;
-    background: #ffffff;
+    background: aliceblue;
     color: #000000;
     font-size: 20px;
     border: 1px double #000000;
-    /* Параметры границы */
     font-family: Ubuntu;
     padding: 10px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.inputForm:focus {
+    border: 1px solid darkblue;
 }
 
 #formSend {
@@ -18,7 +23,7 @@
 .textAreaForm {
     display: block;
     width: 100%;
-    background: #ffffff;
+    background: aliceblue;
     color: #000000;
     font-size: 20px;
     border: 1px double #000000;
@@ -26,6 +31,12 @@
     font-family: Ubuntu;
     padding: 10px;
     height: 125px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.textAreaForm:focus {
+    border: 1px solid darkblue;
 }
 
 .sendDisabled {
@@ -33,23 +44,27 @@
     width: 50%;
     margin: 20 auto auto auto;
     height: 35px;
-    background: #eaeaea;
+    background: silver;
     border: #ffffff00;
     color: #000000;
+    border-radius: 15px;
 }
 
 .sendEnabled {
-    background: #428bca;
+    background: blue;
     color: #fff;
     border: #ffffff00;
     display: block;
     width: 50%;
     margin: 20 auto auto auto;
     height: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 15px;
 }
 
 .sendEnabled:hover {
-    background: #66A1D3;
+    background: darkblue;
 }
 
 #formSendGoal {
