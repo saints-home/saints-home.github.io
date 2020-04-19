@@ -1,20 +1,26 @@
-.galbody {
-    display: flex;
+#artBody {
+    display: block;
     background: #ffffff;
     margin: 30;
 }
-.buttons
-{
-    color: #ffffff;
+
+#photoBody {
+    display: block;
+    background: #ffffff;
+    margin: 30;
+}
+
+.buttons {
+    color: black;
     background: transparent;
     border: none;
 }
-.imgbody
-{
+
+.imgbody {
     width: 100%;
 }
-#img
-{
+
+#img {
     display: block;
     margin: auto;
 }

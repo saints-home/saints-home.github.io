@@ -42,7 +42,7 @@
 .boxViewerRight {
     display: block;
     width: 50%;
-    background: url(/2.jpg) 50% 50%;
+    background: url(/image/art/2.jpg) 50% 50%;
     background-size: 125%;
     border-bottom-right-radius: 25px;
 }
@@ -58,7 +58,7 @@
 .boxViewerLeft {
     display: block;
     width: 50%;
-    background: url(/4.jpg) 50% 50%;
+    background: url(/image/photo/4.jpg) 50% 50%;
     background-size: 125%;
     border-bottom-left-radius: 25px;
 }

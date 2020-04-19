@@ -33,7 +33,7 @@
             <div class="picViewer">
                 <div class="boxViewerLeft"></div>
                 <div class="boxViewerRightText">
-                    <label title="Изображения в модальном окне" class="viewPhotos" for="modal-3" onclick="right_arrow()">Смотреть</label>
+                    <label title="Изображения в модальном окне" class="viewPhotos" for="modal-3" onclick="openPhotu()">Смотреть</label>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
             <div class="picViewerHeader">Арт-иллюстрации</div>
             <div class="picViewer">
                 <div class="boxViewerLeftText">
-                    <label title="Изображения в модальном окне" class="viewPhotos" for="modal-3" onclick="right_arrow()">Смотреть</label>
+                    <label title="Изображения в модальном окне" class="viewPhotos" for="modal-3" onclick="openArt()">Смотреть</label>
                 </div>
                 <div class="boxViewerRight"></div>
             </div>
@@ -104,12 +104,17 @@
                         <label class="btn-close" for="modal-3" aria-hidden="true">×</label>
                     </div>
                     <div>
-                        <div class="galbody">
-                            <button class="buttons" onClick="left_arrow()"><<<</button>
+                        <div id="artBody">
                             <div class="imgbody">
-                                <img src="" width="100%" id="img"> </img>
+                                <img src="" width="100%" id="imgArt"> </img>
                             </div>
-                            <button class="buttons" onClick="right_arrow()">>>></button>
+                            <button class="buttons" onClick="nextArt()">NEXT</button>
+                        </div>
+                        <div id="photoBody">
+                            <div class="imgbody">
+                                <img src="" width="100%" id="imgPhoto"></img>
+                            </div>
+                            <button class="buttons" onClick="nextPhoto()">NEXT</button>
                         </div>
                     </div>
                     <div class="modal-footer">
