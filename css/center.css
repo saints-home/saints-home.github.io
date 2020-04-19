@@ -1,3 +1,30 @@
+.picViewerDiscription {
+    width: 313px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    text-align-last: center;
+    margin: auto;
+    font-size: 24px;
+}
+
+.viewPhotos {
+    display: block;
+    background: blue;
+    color: aliceblue;
+    border-radius: 100px;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    line-height: 1.7;
+    text-align: center;
+    margin: auto;
+}
+
+.viewPhotos:hover {
+    background: darkblue;
+}
+
 .picViewer2 {
     display: block;
     background: silver;
@@ -22,7 +49,7 @@
 
 .boxViewerRightText {
     background: aliceblue;
-    display: block;
+    display: flex;
     width: 50%;
     background-size: 125%;
     border-bottom-right-radius: 25px;
@@ -38,7 +65,7 @@
 
 .boxViewerLeftText {
     background: aliceblue;
-    display: block;
+    display: flex;
     width: 50%;
     background-size: 125%;
     border-bottom-left-radius: 25px;
