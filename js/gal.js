@@ -23,6 +23,16 @@ function nextArt() {
     }
 }
 
+function prevArt() {
+    var objArtBody = document.getElementById("imgArt");
+    if (toArt == 0) {
+        toArt = art.length;
+        objArtBody.src = art[toArt];
+    }
+    toArt--;
+    objArtBody.src = art[toArt];
+}
+
 //Функции управления Фотографиями
 var photo = ["image/photo/3.jpg", "image/photo/4.jpg"];
 var toPhoto = 0;
@@ -46,4 +56,14 @@ function nextPhoto() {
         toPhoto = 0;
         objPhotoBody.src = photo[toPhoto];
     }
+}
+
+function prevPhoto() {
+    var objPhotoBody = document.getElementById("imgPhoto");
+    if (toPhoto == 0) {
+        toPhoto = photo.length;
+        objPhotoBody.src = photo[toPhoto];
+    }
+    toPhoto--;
+    objPhotoBody.src = photo[toPhoto];
 }
