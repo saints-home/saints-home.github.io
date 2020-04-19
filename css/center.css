@@ -1,0 +1,14 @@
+.picViewer {
+    display: block;
+    height: 300px;
+    background: silver;
+    margin: 20px;
+    border-radius: 25px;
+}
+
+.picViewerHeader {
+    display: block;
+    height: 50px;
+    background: aqua;
+    border-radius: 25px;
+}

@@ -1,121 +1,125 @@
 <html>
 <title>Saints-home-page</title>
+
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<link href="css/header.css" rel="stylesheet">
-<link href="css/body.css" rel="stylesheet">
-<link href="css/footer.css" rel="stylesheet">
-<link href="css/modal.css" rel="stylesheet">
-<link href="css/zakaz.css" rel="stylesheet">
-<link href="css/gal.css" rel="stylesheet">
-<script src="send.js" type="text/javascript"></script>
-<script src="gal.js" type="text/javascript"></script>
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-<header class='header'>
-    <div class='boxleft'>
-        <label title="Сообщение" class="link" for="modal-2">Сообщение</label>
-    </div>
-    <div class="boxmid">
-        <a href='index.html'><label title="Изображения в модальном окне" class="Saints-home-page" for="modal-3">Saint</label></a>
-    </div>
-    <div class='boxright'>
-        <label title="О сайте" class="link" for="modal-1">О сайте</label>
-    </div>
-</header>
-<body class="body" onload = "slideShow()">
-  <div>
-  <div class="galbody">
-    <button class="buttons" onClick = "left_arrow()"><<<</button>
-    <div class="imgbody">
-      <img src="" width="60%" id = "img"> </img>
-    </div>
-      <button class="buttons" onClick = "right_arrow()">>>></button>
-  </div>
-</div>
-   <!-- Modal One -->
-<div class="modal">
-    <input class="modal-open" id="modal-1" type="checkbox" hidden>
-    <div class="modal-wrap" aria-hidden="true" role="dialog">
-      <label class="modal-overlay" for="modal-1"></label>
-      <div class="modal-dialog">
-        <div class="modal-header">
-          <h2>О сайте</h2>
-          <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <link href="css/zakaz.css" rel="stylesheet">
+    <link href="css/gal.css" rel="stylesheet">
+    <link href="css/center.css" rel="stylesheet">
+    <script src="js/gal.js" type="text/javascript"></script>
+    <script src="js/send.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <header class='header'>
+        <div class='boxleft'>
+            <label title="Сообщение" class="link" for="modal-2">Сообщение</label>
         </div>
-        <div class="modal-body">
-          <p>Информация о сайте</p>
+        <div class="boxmid">
+            <a href='index.html'><label title="Изображения в модальном окне" class="Saints-home-page" for="modal-3" onclick="right_arrow()">Saint</label></a>
         </div>
-        <div class="modal-footer">
-          <label class="btn btn-primary" for="modal-1">Закрыть</label>
+        <div class='boxright'>
+            <label title="О сайте" class="link" for="modal-1">О сайте</label>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Two -->
-<div class="modal">
-    <input class="modal-open" id="modal-2" type="checkbox" hidden>
-    <div class="modal-wrap" aria-hidden="true" role="dialog">
-      <label class="modal-overlay" for="modal-2"></label>
-      <div class="modal-dialog">
-        <div class="modal-header">
-          <h2>Сообщение</h2>
-          <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
+    </header>
+
+    <body class="body">
+        <div class="picViewer">
+            <div class="picViewerHeader"></div>
         </div>
-        <div id="formSend">
-          <label class="labelText">ФИО</label>
-          <input class="inputForm" id="name" onkeyup="check();" required/>
-          <label class="labelText">Телефон</label>
-          <input class="inputForm" id="phone" onkeyup="check();" required/>
-          <label class="labelText">Сообщение</label>
-          <textarea class="textAreaForm" id="message" onkeyup="check();" required></textarea>
-          <button id="send" class="sendDisabled" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</button> 
-        </div>
-        <div id="formSendGoal">
-          <div class="textSendGoal">Ваша заявка</div>
-          <div id="numberZakaz" class="textSendGoal"></div>
-          <div class="textSendGoal">Успешно отправлена</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Three -->
-  <div class="modal">
-    <input class="modal-open" id="modal-3" type="checkbox" hidden>
-    <div class="modal-wrap" aria-hidden="true" role="dialog">
-      <label class="modal-overlay" for="modal-3"></label>
-      <div class="modal-dialog">
-        <div class="modal-header">
-          <h2>You make my love go...</h2>
-          <label class="btn-close" for="modal-3" aria-hidden="true">×</label>
-        </div>
-        <div class="modal-body">
-          <img src="image/footeruser.png">
-        </div>
-        <div class="modal-footer">
-          <label class="btn btn-primary" for="modal-3">Отлично!</label>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-<footer class="footer">
-    <div class="footerBoxs">
-        <div class="imageFooterBox">
-            <img class="imageFooterUser" src="image/footeruser.png" alt="USER">
-        </div>
-        <div class="textFooterBox">
-            <div class="textNandDBox">
-                <div class="textName">Saint</div>
-                <div class="textDiscription">You make my love go...</div>
-            </div>
-            <div class="textSocial">
-                <div class="textFooter">Социальные сети:</div>
-                <a href="https://www.vk.com/"><img class="linkSocial" src="image/vk.png" alt="vk"></a>
-                <a href="https://www.instagram.com/"><img class="linkSocial" src="image/instagram.png" alt="instagram"></a>
+        <!-- Modal One -->
+        <div class="modal">
+            <input class="modal-open" id="modal-1" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-1"></label>
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <h2>О сайте</h2>
+                        <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+                    </div>
+                    <div class="modal-body">
+                        <p>Информация о сайте</p>
+                    </div>
+                    <div class="modal-footer">
+                        <label class="btn btn-primary" for="modal-1">Закрыть</label>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+        <!-- Modal Two -->
+        <div class="modal">
+            <input class="modal-open" id="modal-2" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-2"></label>
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <h2>Сообщение</h2>
+                        <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
+                    </div>
+                    <div id="formSend">
+                        <label class="labelText">ФИО</label>
+                        <input class="inputForm" id="name" onkeyup="check();" required/>
+                        <label class="labelText">Телефон</label>
+                        <input class="inputForm" id="phone" onkeyup="check();" required/>
+                        <label class="labelText">Сообщение</label>
+                        <textarea class="textAreaForm" id="message" onkeyup="check();" required></textarea>
+                        <button id="send" class="sendDisabled" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</button>
+                    </div>
+                    <div id="formSendGoal">
+                        <div class="textSendGoal">Ваша заявка</div>
+                        <div id="numberZakaz" class="textSendGoal"></div>
+                        <div class="textSendGoal">Успешно отправлена</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Three -->
+        <div class="modal">
+            <input class="modal-open" id="modal-3" type="checkbox" hidden>
+            <div class="modal-wrap" aria-hidden="true" role="dialog">
+                <label class="modal-overlay" for="modal-3"></label>
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <h2>You make my love go...</h2>
+                        <label class="btn-close" for="modal-3" aria-hidden="true">×</label>
+                    </div>
+                    <div>
+                        <div class="galbody">
+                            <button class="buttons" onClick="left_arrow()"><<<</button>
+                            <div class="imgbody">
+                                <img src="" width="100%" id="img"> </img>
+                            </div>
+                            <button class="buttons" onClick="right_arrow()">>>></button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <label class="btn btn-primary" for="modal-3">Отлично!</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="footer">
+        <div class="footerBoxs">
+            <div class="imageFooterBox">
+                <img class="imageFooterUser" src="image/footeruser.png" alt="USER">
+            </div>
+            <div class="textFooterBox">
+                <div class="textNandDBox">
+                    <div class="textName">Saint</div>
+                    <div class="textDiscription">You make my love go...</div>
+                </div>
+                <div class="textSocial">
+                    <div class="textFooter">Социальные сети:</div>
+                    <a href="https://www.vk.com/"><img class="linkSocial" src="image/vk.png" alt="vk"></a>
+                    <a href="https://www.instagram.com/"><img class="linkSocial" src="image/instagram.png" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </html>
