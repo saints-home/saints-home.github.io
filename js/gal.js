@@ -1,9 +1,6 @@
-var toArt = 0;
-var toPhoto = 0;
-
+//Функции управления Арт-иллюстрациями
 var art = ["image/art/1.jpg", "image/art/2.jpg"];
-var photo = ["image/photo/3.jpg", "image/photo/4.jpg"];
-
+var toArt = 0;
 
 function openArt() {
     var photoBody = document.getElementById("photoBody");
@@ -25,6 +22,10 @@ function nextArt() {
         objArtBody.src = art[toArt];
     }
 }
+
+//Функции управления Фотографиями
+var photo = ["image/photo/3.jpg", "image/photo/4.jpg"];
+var toPhoto = 0;
 
 function openPhotu() {
     var photoBody = document.getElementById("photoBody");
