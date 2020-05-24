@@ -9,7 +9,7 @@
 }
 
 .viewPhotos {
-    display: none;
+    display: block;
     background: blue;
     color: aliceblue;
     border-radius: 100px;
@@ -19,13 +19,17 @@
     line-height: 1.7;
     text-align: center;
     margin: 425px 25px 25px auto;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .picViewerLeft:hover .viewPhotos {
-    display: block;
+    opacity: 1;
+    transition: 0.5s;
 }
 .picViewerRight:hover .viewPhotos {
-    display: block;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .boxPicViewer
