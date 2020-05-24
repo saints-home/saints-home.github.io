@@ -60,14 +60,7 @@
     background: url(/image/art/2.jpg) 50% 50%;
     background-size: 125%;
     border-bottom-right-radius: 25px;
-}
-
-.boxViewerRightText {
-    background: aliceblue;
-    display: flex;
-    width: 50%;
-    background-size: 125%;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .boxViewerLeft {
@@ -75,14 +68,7 @@
     width: 100%;
     background: url(/image/photo/4.jpg) 50% 50%;
     background-size: 125%;
-    border-bottom-left-radius: 25px;
-}
-
-.boxViewerLeftText {
-    background: aliceblue;
-    display: flex;
-    width: 50%;
-    background-size: 125%;
+    border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
 }
 
