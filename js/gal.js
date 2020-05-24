@@ -2,7 +2,7 @@
 var art = ["image/art/1.jpg", "image/art/2.jpg", "https://lh4.googleusercontent.com/Q-ovXG5KJLcROK8sUqtPGXrsjbRrJN4GfZYBbRCy4w3P-jC3skjN_ojexDwGumJgj1Mg15PLOipXul04ZQwm=w1600-h795-rw"];
 var toArt = 0;
 var artZoom = "50% 50%"
-var artZoom2 = "150%"
+var artZoom2 = "100%"
 
 function openArt() {
     var photoBody = document.getElementById("photoBody");
