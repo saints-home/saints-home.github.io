@@ -66,9 +66,11 @@
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    transition: 0.5s;
 }
 
 .link:hover {
     background-color: #282828;
     color: #ffffff;
+    transition: 0.5s;
 }
