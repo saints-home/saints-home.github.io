@@ -9,7 +9,7 @@
 }
 
 .viewPhotos {
-    display: block;
+    display: none;
     background: blue;
     color: aliceblue;
     border-radius: 100px;
@@ -21,8 +21,11 @@
     margin: 425px 25px 25px auto;
 }
 
-.viewPhotos:hover {
-    background: darkblue;
+.picViewerLeft:hover .viewPhotos {
+    display: block;
+}
+.picViewerRight:hover .viewPhotos {
+    display: block;
 }
 
 .boxPicViewer
@@ -36,7 +39,7 @@
     margin: 20px 30px 30px 30px;
     border-radius: 25px;
     box-shadow: 0px 2px 10px 2px #000000d0;
-    width: 46%;
+    width: 50%;
 }
 
 .picViewerRight {
@@ -45,7 +48,7 @@
     margin: 20px 30px 30px 30px;
     border-radius: 25px;
     box-shadow: 0px 2px 10px 2px #000000d0;
-    width: 46%;
+    width: 50%;
 }
 
 .picViewer {
