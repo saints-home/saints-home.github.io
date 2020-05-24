@@ -14,6 +14,7 @@ function openArt() {
     var objArtBody = document.getElementById("imgChange");
     objArtBody.style.background = "url(" + art[toArt] + ") " + artZoom;
     objArtBody.style.backgroundSize = artZoom2;
+    objArtBody.style.backgroundRepeat = "no-repeat"
 }
 
 function nextArt() {
@@ -21,10 +22,12 @@ function nextArt() {
     toArt++;
     objArtBody.style.background = "url(" + art[toArt] + ") " + artZoom;
     objArtBody.style.backgroundSize = artZoom2;
+    objArtBody.style.backgroundRepeat = "no-repeat"
     if (toArt == art.length) {
         toArt = 0;
         objArtBody.style.background = "url(" + art[toArt] + ") " + artZoom;
         objArtBody.style.backgroundSize = artZoom2;
+        objArtBody.style.backgroundRepeat = "no-repeat"
     }
 }
 
@@ -34,10 +37,12 @@ function prevArt() {
         toArt = art.length;
         objArtBody.style.background = "url(" + art[toArt] + ") " + artZoom;
         objArtBody.style.backgroundSize = artZoom2;
+        objArtBody.style.backgroundRepeat = "no-repeat"
     }
     toArt--;
     objArtBody.style.background = "url(" + art[toArt] + ") " + artZoom;
     objArtBody.style.backgroundSize = artZoom2;
+    objArtBody.style.backgroundRepeat = "no-repeat"
 }
 
 //Функции управления Фотографиями
