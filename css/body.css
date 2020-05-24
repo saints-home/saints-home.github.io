@@ -1,6 +1,8 @@
-.body {
+body {
     margin: 70px 0px 0px 0px;
-    background-color: silver;
+    background: silver;
+    font-family: Ubuntu;
+    overflow: auto;
 }
 
 .css {
