@@ -105,7 +105,7 @@
 /* элементы модального окна */
 
 .modal-dialog {
-    background: aliceblue;
+    background: #ffffff99;
     border: #000000 solid 0px;
     border-radius: 5px;
     position: fixed;
@@ -121,6 +121,8 @@
     transition: transform 0.4s ease-out;
     z-index: 103;
     border-radius: 15px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
 .modal-dialog-img {
@@ -152,7 +154,6 @@
 
 .modal-header {
     padding: 10px 10px;
-    background: linear-gradient(to top, silver, aliceblue);
     text-align: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
