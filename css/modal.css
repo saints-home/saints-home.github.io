@@ -63,6 +63,8 @@
     right: 0;
     bottom: 0;
     z-index: 101;
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 .modal-overlay {
