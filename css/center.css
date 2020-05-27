@@ -78,7 +78,7 @@
 #boxViewerLeft:hover, #boxViewerRight:hover{
     background: #33333385;
     opacity: 1;
-    transition: backdrop-filter 1.5s ease-out;
+    transition: backdrop-filter 0.5s;
 }
 
 .picViewerHeader {
