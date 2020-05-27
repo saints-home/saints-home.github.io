@@ -10,7 +10,7 @@
 
 .viewPhotos {
     display: block;
-    background: blue;
+    background: #ffffff6e;
     color: aliceblue;
     border-radius: 100px;
     height: 50px;
@@ -21,6 +21,8 @@
     margin: 425px 25px 25px auto;
     opacity: 0;
     transition: 0.5s;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 .picViewerLeft:hover .viewPhotos {
