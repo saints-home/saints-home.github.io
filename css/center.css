@@ -43,6 +43,9 @@
     border-radius: 25px;
     box-shadow: 0px 2px 10px 2px #000000d0;
     width: 50%;
+    background: url(/image/photo/4.jpg) 50% 50%;
+    background-size: 150%;
+    background-repeat: no-repeat;
 }
 
 .picViewerRight {
@@ -51,6 +54,8 @@
     border-radius: 25px;
     box-shadow: 0px 2px 10px 2px #000000d0;
     width: 50%;
+    background: url(/image/art/2.jpg) 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .picViewer {
@@ -62,20 +67,11 @@
 .boxViewerRight {
     display: block;
     width: 100%;
-    background: url(/image/art/2.jpg) 50% 50%;
-    background-repeat: no-repeat;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
 }
 
 .boxViewerLeft {
     display: block;
     width: 100%;
-    background: url(/image/photo/4.jpg) 50% 50%;
-    background-size: 150%;
-    background-repeat: no-repeat;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
 }
 
 .picViewerHeader {
