@@ -41,7 +41,7 @@ nav a {
     transition: .6s ease-in-out;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    border-radius: 25px;
+    border-radius: 15px;
 }
 .topmenu > li:hover .submenu{
   visibility: visible;
