@@ -39,7 +39,7 @@ nav a {
     z-index: 5;
     transform: perspective(600px) rotateX(-90deg);
     transform-origin: 0% 0%;
-    transition: .6s ease-in-out;
+    transition: .5s;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 15px;
