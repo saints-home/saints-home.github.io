@@ -27,12 +27,13 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    background: #fff;
+    background: #ffffff7a;
     top: 40px;
-    left: 20px;
+    left: 0px;
     height: 40px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: 0.5s;
 }
 .topmenu:hover .submenu {
     visibility: visible;
