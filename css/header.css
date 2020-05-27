@@ -12,8 +12,8 @@
     align-items: center;
     -webkit-backdrop-filter:saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .Saints-home-page {
@@ -66,6 +66,7 @@
     text-decoration: none;
     border-radius: 5px;
     margin-right: 10px;
+    margin-left: 10px;
     justify-content: center;
     align-items: center;
     /* border: 1px solid black; */
