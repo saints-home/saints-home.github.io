@@ -28,6 +28,7 @@ function test() {
     })
     $('#topmenu').hover(function() {
         var set = document.getElementById("submenu");
+        set.style.background = "#33333385"
         set.style.visibility = "visible";
         set.style.opacity = "1";
         set.style.transition = "0.25s"
