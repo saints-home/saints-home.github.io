@@ -11,6 +11,7 @@
     background: #33333385;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
+    z-index: 10;
 }
 
 .Saints-home-page {

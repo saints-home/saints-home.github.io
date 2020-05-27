@@ -96,4 +96,6 @@
     font-family: Ubuntu;
     color: #fff;
     font-weight: 600;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
