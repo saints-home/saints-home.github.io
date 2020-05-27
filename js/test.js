@@ -31,7 +31,7 @@ function test() {
         set.style.visibility = "visible";
         set.style.opacity = "1";
         var set1 = document.getElementById("topmenu");
-        set1.style.background = "#0006ffd0";
+        set1.style.background = "#001dff99";
     }, function() {
         var set = document.getElementById("submenu");
         set.style.visibility = "hidden";
