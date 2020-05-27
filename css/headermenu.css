@@ -8,7 +8,7 @@ nav a {
   display: block;
   text-decoration: none;
   outline: none;
-  transition: .4s ease-in-out;
+  transition: .5s;
 }
 .topmenu {
   backface-visibility: hidden;
