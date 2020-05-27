@@ -30,12 +30,14 @@ function test() {
         var set = document.getElementById("submenu");
         set.style.visibility = "visible";
         set.style.opacity = "1";
+        set.style.transition = "0.25s"
         var set1 = document.getElementById("topmenu");
         set1.style.background = "#001dff99";
     }, function() {
         var set = document.getElementById("submenu");
         set.style.visibility = "hidden";
         set.style.opacity = "0";
+        set.style.transition = "0.25s"
         var set1 = document.getElementById("topmenu");
         set1.style.background = "";
       });
