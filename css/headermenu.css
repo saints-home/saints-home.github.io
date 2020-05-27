@@ -48,6 +48,9 @@
     opacity: 0;
     top: 40px;
     left: 0px;
-    transition: 0.15s;
     height: 40px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: backdrop-filter 0.25s;
+    transition: 0.25s;
 }
