@@ -39,7 +39,6 @@
 
 .picViewerLeft {
     display: block;
-    background: silver;
     margin: 20px 30px 30px 30px;
     border-radius: 25px;
     box-shadow: 0px 2px 10px 2px #000000d0;
@@ -48,7 +47,6 @@
 
 .picViewerRight {
     display: block;
-    background: silver;
     margin: 20px 30px 30px 30px;
     border-radius: 25px;
     box-shadow: 0px 2px 10px 2px #000000d0;
@@ -81,7 +79,9 @@
 }
 
 .picViewerHeader {
-    background: linear-gradient(to top, silver, aliceblue);
+    background: #33333300;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     display: block;
     height: 50px;
     border-top-left-radius: 25px;

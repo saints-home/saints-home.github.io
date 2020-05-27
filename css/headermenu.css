@@ -9,7 +9,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color: #353535d0;
+    background-color: #33333385;
     visibility: hidden;
     opacity: 0;
     top: 40px;
