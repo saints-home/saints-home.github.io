@@ -5,20 +5,38 @@
     height: 40px;
 }
 .linkMenu {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.linkSubMenu {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
+    display: flex;
     text-decoration: none;
-    margin-right: 15px;
-    margin-left: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
     justify-content: center;
     align-items: center;
-    transition: 0.5s;
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
 }
-.linkMenu:hover {
-    color: #0006ff;
-    transition: 0.5s;
+.linkMenu:hover, .linkSubMenu:hover {
+    background-color: #0006ffd0;
+    color: #fff;
 }
 .submenu {
     display: flex;
@@ -31,7 +49,7 @@
     top: 40px;
     left: 0px;
     height: 40px;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 .topmenu:hover .submenu {
     visibility: visible;
