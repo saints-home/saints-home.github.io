@@ -26,10 +26,13 @@
 .picViewerLeft:hover .viewPhotos {
     opacity: 1;
     transition: 0.5s;
+    transition: 0.5s -webkit-backdrop-filter blur(20px);
+    transition: 0.5s backdrop-filter blur(20px);
 }
 .picViewerRight:hover .viewPhotos {
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.5s -webkit-backdrop-filter blur(20px);
+    transition: 0.5s backdrop-filter blur(20px);
 }
 
 .boxPicViewer
@@ -77,11 +80,15 @@
     background: #33333385;
     opacity: 1;
     transition: 0.5s;
+    transition: 0.5s -webkit-backdrop-filter blur(20px);
+    transition: 0.5s backdrop-filter blur(20px);
 }
 #boxViewerRight:hover {
     background: #33333385;
     opacity: 1;
     transition: 0.5s;
+    transition: 0.5s -webkit-backdrop-filter blur(20px);
+    transition: 0.5s backdrop-filter blur(20px);
 }
 
 .picViewerHeader {
