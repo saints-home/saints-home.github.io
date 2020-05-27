@@ -73,14 +73,14 @@
     width: 100%;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    transition: backdrop-filter 0.5s;
-    transition: 0.5s;
+    transition: backdrop-filter 0.25s;
+    transition: 0.25s;
 }
 
 #boxViewerLeft:hover, #boxViewerRight:hover{
     background: #33333385;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .picViewerHeader {
