@@ -1,56 +1,40 @@
-* { box-sizing: border-box; }
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  display: block;
-  text-decoration: none;
-  outline: none;
-  transition: .5s;
-}
 .topmenu {
-  backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 }
-.topmenu > li {
-  display: inline-block;
-  position: relative;
+.linkMenu {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
 }
-.topmenu > li > a {
-  font-family: 'Exo 2', sans-serif;
-  height: 70px;
-  line-height: 70px;
-  padding: 0 30px;
-  font-weight: bold;
-  color: #003559;
-  text-transform: uppercase;
+.linkMenu:hover {
+    color: #0006ff;
+    transition: 0.5s;
 }
-.topmenu li a:hover { color: #E6855F; }
 .submenu {
-    display: block;
-    background: linear-gradient(to top, #c0c0c085, #f0f8ff85);
-    box-shadow: 0px 0px 20px 0px #353535d0;
-    top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    left: 25;
     visibility: hidden;
     opacity: 0;
-    z-index: 5;
-    transform: perspective(600px) rotateX(-90deg);
-    transform-origin: 0% 0%;
-    transition: .5s;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    border-radius: 15px;
+    background: #fff;
+    top: 40px;
+    left: 20px;
+    height: 40px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
-.topmenu > li:hover .submenu{
-  visibility: visible;
-  opacity: 1;
-  transform: perspective(600px) rotateX(0deg);
-}
-.submenu li a {
-  font-size: 13px;
-  line-height: 36px;
-  padding: 0 25px;
+.topmenu:hover .submenu {
+    visibility: visible;
+    opacity: 1;
 }
