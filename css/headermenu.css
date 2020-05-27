@@ -24,16 +24,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: static;
     visibility: hidden;
     opacity: 0;
-    background: #ffffff7a;
     top: 40px;
     left: 0px;
     height: 40px;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    transition: 0.5s;
 }
 .topmenu:hover .submenu {
     visibility: visible;
