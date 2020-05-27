@@ -67,28 +67,18 @@
     height: 500px;
 }
 
-#boxViewerRight {
+#boxViewerRight, #boxViewerLeft {
     display: block;
+    opacity: 0;
     width: 100%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
-#boxViewerLeft {
-    display: block;
-    width: 100%;
-}
-#boxViewerLeft:hover {
+#boxViewerLeft:hover, #boxViewerRight:hover{
     background: #33333385;
     opacity: 1;
-    transition: 0.5s;
-    transition: 0.5s -webkit-backdrop-filter blur(20px);
-    transition: 0.5s backdrop-filter blur(20px);
-}
-#boxViewerRight:hover {
-    background: #33333385;
-    opacity: 1;
-    transition: 0.5s;
-    transition: 0.5s -webkit-backdrop-filter blur(20px);
-    transition: 0.5s backdrop-filter blur(20px);
+    transition: backdrop-filter 1.5s ease-out;
 }
 
 .picViewerHeader {
