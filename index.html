@@ -10,6 +10,7 @@
     <link href="css/zakaz.css" rel="stylesheet">
     <link href="css/gal.css" rel="stylesheet">
     <link href="css/center.css" rel="stylesheet">
+    <link href="css/headermenu.css" rel="stylesheet">
     <script src="js/gal.js" type="text/javascript"></script>
     <script src="js/send.js" type="text/javascript"></script>
     <script src="js/test.js" type="text/javascript"></script>
@@ -17,7 +18,18 @@
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <header class='header'>
-        <div class='boxleft'>
+        <nav>
+            <ul class="topmenu">
+              <li>
+                  <label title="О сайте" class="down">Меню сайта</label>
+                <ul class="submenu">
+                  <li><label title="О сайте" class="link" for="modal-1">О сайте</label></li>
+                  <li><label title="Сообщение" class="link" for="modal-2">Сообщение</label></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+       <!-- <div class='boxleft'>
             <label title="Сообщение" class="link" for="modal-2">Сообщение</label>
         </div>
         <div class="boxmid">
@@ -25,7 +37,7 @@
         </div>
         <div class='boxright'>
             <label title="О сайте" class="link" for="modal-1">О сайте</label>
-        </div>
+        </div>-->
     </header>
 
     <body id="lol" onload="test()">
