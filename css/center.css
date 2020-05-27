@@ -21,8 +21,6 @@
     margin: 425px 25px 25px auto;
     opacity: 0;
     transition: 0.5s;
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
 }
 
 .picViewerLeft:hover .viewPhotos {
