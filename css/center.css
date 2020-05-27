@@ -71,6 +71,8 @@
     display: block;
     opacity: 0;
     width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     transition: backdrop-filter 0.25s;
