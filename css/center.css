@@ -64,21 +64,21 @@
     height: 500px;
 }
 
-.boxViewerRight {
+#boxViewerRight {
     display: block;
     width: 100%;
 }
 
-.boxViewerLeft {
+#boxViewerLeft {
     display: block;
     width: 100%;
 }
-.boxViewerLeft:hover {
+#boxViewerLeft:hover {
     background: #33333385;
     opacity: 1;
     transition: 0.5s;
 }
-.boxViewerRight:hover {
+#boxViewerRight:hover {
     background: #33333385;
     opacity: 1;
     transition: 0.5s;
