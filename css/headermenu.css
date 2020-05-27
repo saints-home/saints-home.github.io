@@ -49,7 +49,6 @@
     top: 40px;
     left: 0px;
     height: 40px;
-    transition: 0.25s;
 }
 .topmenu:hover .submenu {
     visibility: visible;
