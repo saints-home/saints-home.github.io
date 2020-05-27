@@ -75,9 +75,7 @@
 }
 
 .picViewerHeader {
-    background: #33333300;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    background: #33333385;
     display: block;
     height: 50px;
     border-top-left-radius: 25px;
@@ -86,4 +84,6 @@
     line-height: 2;
     font-size: 25px;
     font-family: Ubuntu;
+    color: #fff;
+    font-weight: 600;
 }
