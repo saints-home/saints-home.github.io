@@ -8,7 +8,7 @@
     height: 40px;
     display: flex;
     align-items: center;
-    background: #33333385;
+    background: #333333bd;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     z-index: 10;

@@ -1,6 +1,7 @@
 body {
     margin: 70px 0px 0px 0px;
-    background-image: linear-gradient(to right, rgb(153, 0, 0), rgb(122, 31, 0), rgb(92, 61, 0), rgb(61, 92, 0), rgb(31, 122, 0), rgb(0, 153, 0), rgb(0, 128, 26), rgb(0, 102, 51), rgb(0, 77, 77), rgb(0, 51, 102), rgb(0, 26, 128), rgb(0, 0, 153));
+    background-color: silver;
+    background-image: url(image/fon.jpg);
     font-family: Ubuntu;
     overflow: auto;
 }
