@@ -6,37 +6,41 @@
     display: block;
 }
 
-.buttons {
-    color: aliceblue;
-    background: transparent;
-    border: none;
-    font-size: 40px;
-    height: 59px;
-    outline: none;
+#boxButtons {
+    display: flex;
     position: absolute;
+    width: 100%;
     height: 100%;
 }
 
 .buttonNext {
     color: aliceblue;
-    background: transparent;
+    background: #333333bd;
     border: none;
     font-size: 40px;
-    height: 59px;
     outline: none;
-    position: absolute;
-    height: 100%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: auto 0 auto auto;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
 }
 
 .buttonPrev {
     color: aliceblue;
-    background: transparent;
+    background: #333333bd;
     border: none;
     font-size: 40px;
-    height: 59px;
     outline: none;
-    position: absolute;
-    height: 100%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: auto auto auto 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
 }
 
 .imgbody {

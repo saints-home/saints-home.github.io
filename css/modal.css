@@ -42,8 +42,12 @@
     font-size: 40px;
     text-decoration: none;
     position: absolute;
-    right: 15px;
-    top: 0px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    right: 0;
+    background: #333333bf;
+    border-bottom-left-radius: 25px;
 }
 
 .modal .btn-close-img:hover {

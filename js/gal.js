@@ -6,7 +6,7 @@ function openArt() {
     var photoBody = document.getElementById("photo");
     photoBody.style.display = "none";
     var artBody = document.getElementById("art");
-    artBody.style.display = "flex";
+    artBody.style.display = "block";
     var pb = document.getElementById('artBody');
     pb.style.height = document.body.clientHeight;
     pb.style.width = "auto";
@@ -42,7 +42,7 @@ var toPhoto = 0;
 
 function openPhotu() {
     var photoBody = document.getElementById("photo");
-    photoBody.style.display = "flex";
+    photoBody.style.display = "block";
     var artBody = document.getElementById("art");
     artBody.style.display = "none";
     var pb = document.getElementById('photoBody');
