@@ -13,6 +13,30 @@
     font-size: 40px;
     height: 59px;
     outline: none;
+    position: absolute;
+    height: 100%;
+}
+
+.buttonNext {
+    color: aliceblue;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    height: 59px;
+    outline: none;
+    position: absolute;
+    height: 100%;
+}
+
+.buttonPrev {
+    color: aliceblue;
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    height: 59px;
+    outline: none;
+    position: absolute;
+    height: 100%;
 }
 
 .imgbody {
@@ -22,4 +46,8 @@
 #img {
     display: block;
     margin: auto;
+}
+#art, #photo
+{
+    position: relative;
 }
