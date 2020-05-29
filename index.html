@@ -53,6 +53,7 @@
             <div class="modal-wrap" aria-hidden="true" role="dialog">
                 <label class="modal-overlay" for="modal-1"></label>
                 <div class="modal-dialog">
+                    <div class="info">
                     <div class="modal-header">
                         <h2>О сайте</h2>
                         <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
@@ -60,9 +61,7 @@
                     <div class="modal-body">
                         <p>Информация о сайте</p>
                     </div>
-                    <!--<div class="modal-footer">
-                        <label class="btn btn-primary" for="modal-1">Закрыть</label>
-                    </div>-->
+                </div>
                 </div>
             </div>
         </div>
@@ -71,24 +70,26 @@
             <input class="modal-open" id="modal-2" type="checkbox" hidden>
             <div class="modal-wrap" aria-hidden="true" role="dialog">
                 <label class="modal-overlay" for="modal-2"></label>
-                <div class="modal-dialog-msg">
-                    <div class="modal-header">
-                        <h2>Сообщение</h2>
-                        <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
-                    </div>
-                    <div id="formSend">
-                        <label class="labelText">ФИО</label>
-                        <input class="inputForm" id="name" onkeyup="check();" required/>
-                        <label class="labelText">Телефон</label>
-                        <input class="inputForm" id="phone" onkeyup="check();" required/>
-                        <label class="labelText">Сообщение</label>
-                        <textarea class="textAreaForm" id="message" onkeyup="check();" required></textarea>
-                        <label id="send" class="sendDisabled" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</label>
-                    </div>
-                    <div id="formSendGoal">
-                        <div class="textSendGoal">Ваша заявка</div>
-                        <div id="numberZakaz" class="textSendGoal"></div>
-                        <div class="textSendGoal">Успешно отправлена</div>
+                <div class="modal-dialog">
+                    <div class="msg">
+                        <div class="modal-header">
+                            <h2>Сообщение</h2>
+                            <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
+                        </div>
+                        <div id="formSend">
+                            <label class="labelText">ФИО</label>
+                            <input class="inputForm" id="name" onkeyup="check();" required/>
+                            <label class="labelText">Телефон</label>
+                            <input class="inputForm" id="phone" onkeyup="check();" required/>
+                            <label class="labelText">Сообщение</label>
+                            <textarea class="textAreaForm" id="message" onkeyup="check();" required></textarea>
+                            <label id="send" class="sendDisabled" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</label>
+                        </div>
+                        <div id="formSendGoal">
+                            <div class="textSendGoal">Ваша заявка</div>
+                            <div id="numberZakaz" class="textSendGoal"></div>
+                            <div class="textSendGoal">Успешно отправлена</div>
+                        </div>
                     </div>
                 </div>
             </div>
