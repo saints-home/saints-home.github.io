@@ -31,9 +31,11 @@
     align-items: center;
     transition: 0.15s;
     height: 100%;
+    transition: 0.25s;
 }
 #linkSubMenu:hover {
     background-color: #0050ff;
+    transition: 0.25s;
 }
 #submenu {
     display: flex;

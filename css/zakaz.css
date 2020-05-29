@@ -72,6 +72,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 1px;
+    transition: 0.25s;
 }
 
 .sendEnabled {
@@ -87,10 +88,12 @@
     align-items: center;
     justify-content: center;
     padding-top: 1px;
+    transition: 0.25s;
 }
 
 .sendEnabled:hover {
-    background: darkblue;
+    background: #0070ff;
+    transition: 0.25s;
 }
 
 #formSendGoal {

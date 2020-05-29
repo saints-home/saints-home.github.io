@@ -34,6 +34,7 @@ function test() {
         set.style.transition = "0.25s"
         var set1 = document.getElementById("topmenu");
         set1.style.background = "#0050ff";
+        set1.style.transition = "0.25s"
     }, function() {
         var set = document.getElementById("submenu");
         set.style.visibility = "hidden";
@@ -41,5 +42,6 @@ function test() {
         set.style.transition = "0.25s"
         var set1 = document.getElementById("topmenu");
         set1.style.background = "";
+        set1.style.transition = "0.25s"
       });
 }
