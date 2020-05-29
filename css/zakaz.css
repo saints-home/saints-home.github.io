@@ -5,16 +5,19 @@
     border-radius: 15px;
     margin: auto;
     position: relative;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .info
 {
     display: block;
     background: #33333385;
-
     border-radius: 15px;
     margin: auto;
     position: relative;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .inputForm {
