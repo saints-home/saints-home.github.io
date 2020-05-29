@@ -1,8 +1,8 @@
 .inputForm {
     display: block;
     width: 100%;
-    background: aliceblue;
-    color: #000000;
+    background: #00000085;
+    color: #fff;
     font-size: 20px;
     border: 1px double #000000;
     font-family: Ubuntu;
@@ -23,8 +23,8 @@
 .textAreaForm {
     display: block;
     width: 100%;
-    background: aliceblue;
-    color: #000000;
+    background: #00000085;
+    color: #fff;
     font-size: 20px;
     border: 1px double #000000;
     /* Параметры границы */
@@ -33,6 +33,7 @@
     height: 125px;
     border-radius: 15px;
     outline: none;
+    resize: none;
 }
 
 .textAreaForm:focus {
@@ -83,7 +84,7 @@
 
 .labelText {
     display: block;
-    color: #000000;
+    color: #fff;
     font-family: Ubuntu;
     text-align: center;
     padding-bottom: 5px;
