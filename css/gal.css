@@ -1,6 +1,8 @@
 #artBody, #photoBody {
     display: block;
     margin: auto;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 #boxButtons {
