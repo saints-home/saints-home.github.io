@@ -33,7 +33,7 @@
 }
 
 .modal .btn-close:hover {
-    color: red;
+    color: #0050ff;
 }
 
 .modal .btn-close-img {
@@ -51,7 +51,7 @@
 }
 
 .modal .btn-close-img:hover {
-    color: aliceblue;
+    color: #0050ff;
 }
 
 

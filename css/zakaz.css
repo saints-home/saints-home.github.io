@@ -13,6 +13,7 @@
 {
     display: block;
     background: #33333385;
+
     border-radius: 15px;
     margin: auto;
     position: relative;
@@ -32,7 +33,7 @@
 }
 
 .inputForm:focus {
-    border: 1px solid darkblue;
+    border: 1px solid #0050ff;
 }
 
 #formSend {
@@ -57,7 +58,7 @@
 }
 
 .textAreaForm:focus {
-    border: 1px solid darkblue;
+    border: 1px solid #0050ff;
 }
 
 .sendDisabled {
@@ -75,7 +76,7 @@
 }
 
 .sendEnabled {
-    background: blue;
+    background: #0050ff;
     color: white;
     display: flex;
     width: 50%;

@@ -33,7 +33,7 @@ function test() {
         set.style.opacity = "1";
         set.style.transition = "0.25s"
         var set1 = document.getElementById("topmenu");
-        set1.style.background = "#001dff99";
+        set1.style.background = "#0050ff";
     }, function() {
         var set = document.getElementById("submenu");
         set.style.visibility = "hidden";
