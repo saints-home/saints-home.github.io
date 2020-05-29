@@ -41,27 +41,31 @@
 }
 
 .sendDisabled {
-    display: block;
+    background: #00000085;
+    color: darkgray;
+    display: flex;
     width: 50%;
     margin: 20 auto auto auto;
     height: 35px;
-    background: silver;
-    border: #ffffff00;
-    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
     border-radius: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .sendEnabled {
     background: blue;
-    color: #fff;
-    border: #ffffff00;
-    display: block;
+    color: white;
+    display: flex;
     width: 50%;
     margin: 20 auto auto auto;
     height: 35px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     border-radius: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .sendEnabled:hover {
@@ -75,7 +79,7 @@
 }
 
 .textSendGoal {
-    color: #000000;
+    color: white;
     text-align: center;
     font-family: Ubuntu;
     font-size: 25px;
@@ -84,7 +88,7 @@
 
 .labelText {
     display: block;
-    color: #fff;
+    color: darkgray;
     font-family: Ubuntu;
     text-align: center;
     padding-bottom: 5px;
