@@ -34,8 +34,7 @@ function clickNext() {
     const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
     const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
     const lef = parseFloat(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
-    var nextCount = lef - (wid + mar);
-    elemMove.style.left = nextCount;
+    elemMove.style.left = lef - (wid + mar);
     clickCount = clickCount + 1;
     if (clickCount == 4)
     {
@@ -54,8 +53,7 @@ function clickPrev() {
     const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
     const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
     const lef = parseFloat(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
-    var nextCount = lef + (wid + mar);
-    elemMove.style.left = nextCount;
+    elemMove.style.left = lef + (wid + mar);
     clickCount = clickCount - 1;
     if (clickCount == 0)
     {
