@@ -4,7 +4,6 @@ function sevePosition() {
     var elemMove = document.getElementById("moveTrack");
     const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
     const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
-    const lef = parseFloat(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
     if (clickCount == 0)
     {
         elemMove.style.left = 0;
@@ -29,8 +28,9 @@ function sevePosition() {
 
 function clickNext() {
     var elemMove = document.getElementById("moveTrack");
-    var nextbut = document.getElementById("next");
-    var prevbut = document.getElementById("prev");
+    var nextbut = document.getElementById("buttonCarNext");
+    //nextbut.setAttribute('disabled', true);
+    var prevbut = document.getElementById("buttonCarPrev");
     const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
     const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
     const lef = parseFloat(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
@@ -44,12 +44,13 @@ function clickNext() {
     {
         prevbut.style.visibility = "visible";
     }
+    //nextbut.removeAttribute("disabled");
 }
 
 function clickPrev() {
     var elemMove = document.getElementById("moveTrack");
-    var nextbut = document.getElementById("next");
-    var prevbut = document.getElementById("prev");
+    var nextbut = document.getElementById("buttonCarNext");
+    var prevbut = document.getElementById("buttonCarPrev");
     const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
     const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
     const lef = parseFloat(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));

@@ -31,8 +31,8 @@
     position: absolute;
 }
 
-.buttonCarPrev {
-    display: block;
+#buttonCarPrev {
+    display: flex;
     position: absolute;
     left: 17px;
     height: 56px;
@@ -44,15 +44,13 @@
     box-shadow: 0 0 1px 0 rgba(12,16,20,.12), 0 2px 8px 0 rgba(12,16,20,.08);
     margin-top: 11px;
     cursor: pointer;
-    background-image: url(https://newmos.mos.ru/front/markup/header-footer/media/BtnLeft.e6a7ee96.svg);
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: 50%;
     transition: 0.25s;
+    align-items: center;
+    justify-content: center;
 }
 
-.buttonCarNext {
-    display: block;
+#buttonCarNext {
+    display: flex;
     position: absolute;
     right: 17px;
     height: 56px;
@@ -63,14 +61,12 @@
     box-shadow: 0 0 1px 0 rgba(12,16,20,.12), 0 2px 8px 0 rgba(12,16,20,.08);
     margin-top: 11px;
     cursor: pointer;
-    background-image: url(https://newmos.mos.ru/front/markup/header-footer/media/BtnRight.20cf32e7.svg);
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    transition: 0.25s;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
 }
 
-.buttonCarPrev:hover, .buttonCarNext:hover {
+#buttonCarPrev:hover, #buttonCarNext:hover {
     background-color: #f3f5f7;
     transition: 0.25s;
 }
