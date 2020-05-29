@@ -8,9 +8,9 @@
     height: 40px;
     display: flex;
     align-items: center;
-    background: #333333bd;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    background: #33333385;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     z-index: 10;
 }
 

@@ -1,9 +1,6 @@
-#artBody {
+#artBody, #photoBody {
     display: block;
-}
-
-#photoBody {
-    display: block;
+    margin: auto;
 }
 
 #boxButtons {
