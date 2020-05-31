@@ -20,16 +20,15 @@
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <header class='header'>
-        <div id="topmenu">
-            <label id="linkMenu">Меню</label>
-            <div id="submenu">
-                <label id="linkSubMenu" for="modal-2">Сообщение</label>
-                <label id="linkSubMenu" for="modal-1">О сайте</label>
+        <div class="boxleft">
+            <div id="topmenu">
+                <label id="linkMenu">Меню</label>
+                <div id="submenu">
+                    <label id="linkSubMenu" for="modal-2">Сообщение</label>
+                    <label id="linkSubMenu" for="modal-1">О сайте</label>
+                </div>
             </div>
         </div>
-    </header>
-
-    <body id="lol" onload="test()" onresize="sevePosition()">
         <div class="main">
             <div id="moveTrack">
                 <div id="1" class="item">
@@ -108,7 +107,9 @@
             <button id="buttonCarPrev" onclick="clickPrev()">&lt</button>
             <button id="buttonCarNext" onclick="clickNext()">&gt</button>
         </div>
+    </header>
 
+    <body id="lol" onload="test()" onresize="sevePosition()">
       	<div class="boxPicViewer">
         <div class="picViewerLeft">
             <div class="picViewerHeader">Фотографии</div>

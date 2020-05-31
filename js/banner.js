@@ -27,24 +27,20 @@ function sevePosition() {
 }
 
 function clickNext() {
+    clickCount = clickCount + 1;
     var elemMove = document.getElementById("moveTrack");
     var nextbut = document.getElementById("buttonCarNext");
-    //nextbut.setAttribute('disabled', true);
     var prevbut = document.getElementById("buttonCarPrev");
     const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
     const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
     const lef = parseFloat(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
     elemMove.style.left = lef - (wid + mar);
-    clickCount = clickCount + 1;
-    if (clickCount == 4)
-    {
-        nextbut.style.visibility = "hidden";
+    if (clickCount > 0) {
+        prevbut.style.display = "flex";
     }
-    if (clickCount > 0)
-    {
-        prevbut.style.visibility = "visible";
+    if (clickCount == 4) {
+        nextbut.style.display = "none";
     }
-    //nextbut.removeAttribute("disabled");
 }
 
 function clickPrev() {
@@ -58,10 +54,10 @@ function clickPrev() {
     clickCount = clickCount - 1;
     if (clickCount == 0)
     {
-        prevbut.style.visibility = "hidden";
+        prevbut.style.display = "none";
     }
     if (clickCount < 4)
     {
-        nextbut.style.visibility = "visible";
+        nextbut.style.display = "flex";
     }
 }
