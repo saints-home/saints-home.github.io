@@ -2,8 +2,8 @@ var clickCount = 0;
 
 function sevePosition() {
     var elemMove = document.getElementById("moveTrack");
-    const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
-    const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
+    const wid = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
+    const mar = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
     if (clickCount == 0)
     {
         elemMove.style.left = 0;
@@ -31,9 +31,9 @@ function clickNext() {
     var elemMove = document.getElementById("moveTrack");
     var nextbut = document.getElementById("buttonCarNext");
     var prevbut = document.getElementById("buttonCarPrev");
-    const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
-    const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
-    const lef = parseFloat(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
+    const wid = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
+    const mar = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
+    const lef = parseInt(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
     elemMove.style.left = lef - (wid + mar);
     if (clickCount > 0) {
         prevbut.style.display = "flex";
@@ -44,20 +44,20 @@ function clickNext() {
 }
 
 function clickPrev() {
+    clickCount = clickCount - 1;
     var elemMove = document.getElementById("moveTrack");
     var nextbut = document.getElementById("buttonCarNext");
     var prevbut = document.getElementById("buttonCarPrev");
-    const wid = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
-    const mar = parseFloat(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
-    const lef = parseFloat(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
+    const wid = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
+    const mar = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
+    const lef = parseInt(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
     elemMove.style.left = lef + (wid + mar);
-    clickCount = clickCount - 1;
-    if (clickCount == 0)
-    {
-        prevbut.style.display = "none";
-    }
     if (clickCount < 4)
     {
         nextbut.style.display = "flex";
+    }
+    if (clickCount == 0)
+    {
+        prevbut.style.display = "none";
     }
 }
