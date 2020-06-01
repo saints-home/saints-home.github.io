@@ -1,63 +1,58 @@
 var clickCount = 0;
 
-function sevePosition() {
-    var elemMove = document.getElementById("moveTrack");
-    const wid = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
-    const mar = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
-    if (clickCount == 0)
-    {
-        elemMove.style.left = 0;
-    }
-    if (clickCount == 1)
-    {
-        elemMove.style.left = 0-(wid + mar);
-    }
-    if (clickCount == 2)
-    {
-        elemMove.style.left = 0-(wid + mar)*2;
-    }
-    if (clickCount == 3)
-    {
-        elemMove.style.left = 0-(wid + mar)*3;
-    }
-    if (clickCount == 4)
-    {
-        elemMove.style.left = 0-(wid + mar)*4;
-    }
+function resetPosition() {
+    const wid = parseFloat(getComputedStyle(document.getElementById('item1')).getPropertyValue('width'));
+    const mar = parseFloat(getComputedStyle(document.getElementById('item1')).getPropertyValue('margin-right'));
+    clickCount = 0;
+    document.getElementById('moveTrack').style.transform = "translate3d(-"+((wid + mar)*clickCount)+"px, 0px, 0px)";
+    document.getElementById("buttonCarNext").style.display = "flex";
+    document.getElementById("buttonCarPrev").style.display = "none";
 }
 
 function clickNext() {
+    const wid = parseFloat(getComputedStyle(document.getElementById('item1')).getPropertyValue('width'));
+    const mar = parseFloat(getComputedStyle(document.getElementById('item1')).getPropertyValue('margin-right'));
+    const widthScreen = document.body.clientWidth;
     clickCount = clickCount + 1;
-    var elemMove = document.getElementById("moveTrack");
-    var nextbut = document.getElementById("buttonCarNext");
-    var prevbut = document.getElementById("buttonCarPrev");
-    const wid = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
-    const mar = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
-    const lef = parseInt(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
-    elemMove.style.left = lef - (wid + mar);
-    if (clickCount > 0) {
-        prevbut.style.display = "flex";
+    document.getElementById('moveTrack').style.transform = "translate3d(-"+((wid + mar)*clickCount)+"px, 0px, 0px)";
+    if ((widthScreen >= 320) && (widthScreen < 568)) {
+        if (clickCount > 0) { document.getElementById("buttonCarPrev").style.display = "flex"; }
+        if (clickCount == 5) { document.getElementById("buttonCarNext").style.display = "none"; }
     }
-    if (clickCount == 4) {
-        nextbut.style.display = "none";
+    if ((widthScreen >= 568) && (widthScreen <= 1024)) {
+        if (clickCount > 0) { document.getElementById("buttonCarPrev").style.display = "flex"; }
+        if (clickCount == 4) { document.getElementById("buttonCarNext").style.display = "none"; }
+    }
+    if ((widthScreen > 1024) && (widthScreen <= 1366)) {
+        if (clickCount > 0) { document.getElementById("buttonCarPrev").style.display = "flex"; }
+        if (clickCount == 3) { document.getElementById("buttonCarNext").style.display = "none"; }
+    }
+    if (widthScreen > 1366) {
+        if (clickCount > 0) { document.getElementById("buttonCarPrev").style.display = "flex"; }
+        if (clickCount == 2) { document.getElementById("buttonCarNext").style.display = "none"; }
     }
 }
 
 function clickPrev() {
+    const wid = parseFloat(getComputedStyle(document.getElementById('item1')).getPropertyValue('width'));
+    const mar = parseFloat(getComputedStyle(document.getElementById('item1')).getPropertyValue('margin-right'));
+    const widthScreen = document.body.clientWidth;
+    document.getElementById('moveTrack').style.transform = "translate3d("+((wid + mar)-((wid + mar)*clickCount))+"px, 0px, 0px)";
     clickCount = clickCount - 1;
-    var elemMove = document.getElementById("moveTrack");
-    var nextbut = document.getElementById("buttonCarNext");
-    var prevbut = document.getElementById("buttonCarPrev");
-    const wid = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('width'));
-    const mar = parseInt(getComputedStyle(document.getElementById('1')).getPropertyValue('margin-left'));
-    const lef = parseInt(getComputedStyle(document.getElementById('moveTrack')).getPropertyValue('left'));
-    elemMove.style.left = lef + (wid + mar);
-    if (clickCount < 4)
-    {
-        nextbut.style.display = "flex";
+    if ((widthScreen >= 320) && (widthScreen < 568)) {
+        if (clickCount < 5) { document.getElementById("buttonCarNext").style.display = "flex"; }
+        if (clickCount == 0) { document.getElementById("buttonCarPrev").style.display = "none"; }
     }
-    if (clickCount == 0)
-    {
-        prevbut.style.display = "none";
+    if ((widthScreen >= 568) && (widthScreen <= 1024)) {
+        if (clickCount < 4) { document.getElementById("buttonCarNext").style.display = "flex"; }
+        if (clickCount == 0) { document.getElementById("buttonCarPrev").style.display = "none"; }
+    }
+    if ((widthScreen > 1024) && (widthScreen <= 1366)) {
+        if (clickCount < 3) { document.getElementById("buttonCarNext").style.display = "flex"; }
+        if (clickCount == 0) { document.getElementById("buttonCarPrev").style.display = "none"; }
+    }
+    if (widthScreen > 1366) {
+        if (clickCount < 2) { document.getElementById("buttonCarNext").style.display = "flex"; } 
+        if (clickCount == 0) { document.getElementById("buttonCarPrev").style.display = "none"; }
     }
 }

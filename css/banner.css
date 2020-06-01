@@ -12,14 +12,14 @@
     position: absolute;
     width: 196.8%;
     left: 0;
-    transition: left 0.15s;
+    padding: 0 32px;
+    transition: transform .2s ease-in-out;
 }
 
 .item {
     display: flex;
     color: white;
-    margin-left: 0.85%;
-    width: calc(100%/8);
+    min-width: 11.63%;
     height: 80px;
     align-items: center;
     font-size: 50px;
@@ -67,4 +67,63 @@
 #buttonCarPrev:hover, #buttonCarNext:hover {
     background-color: #f3f5f7;
     transition: 0.25s;
+}
+
+.layoutPrev {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    left: 0;
+    background: white;
+}
+
+.layoutNext {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 0;
+    background: white;
+}
+
+#item1, #item2, #item3, #item4, #item5, #item6 {
+    margin-right: 24px;
+}
+
+@media (min-width: 320px) and (max-width: 568px)
+{
+    .item {
+        min-width: 44.5%;
+    }
+    .layoutPrev, .layoutNext {
+        width: 20px;
+    }
+    #moveTrack {
+        padding: 0 20px;
+    }
+}
+@media (min-width: 568px) and (max-width: 768px)
+{
+    .item {
+        min-width: 22.48%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px)
+{
+    .item {
+        min-width: 23.22%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px)
+{
+    .item {
+        min-width:  15.46%;
+    }
+}
+@media (min-width: 1281px) and (max-width: 1366px)
+{
+    .item {
+        min-width:  15.55%;
+    }
 }
