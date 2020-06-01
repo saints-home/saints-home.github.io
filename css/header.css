@@ -32,7 +32,6 @@
 }
 
 .boxleft {
-    margin-left: 10px;
     width: 50%;
     display: flex;
     justify-content: flex-start;
