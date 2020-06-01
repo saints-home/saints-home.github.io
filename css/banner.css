@@ -12,7 +12,7 @@
     width: 196.8%;
     left: 0;
     padding: 0 32px;
-    transition: transform .2s ease-in-out;
+    transition: transform .15s ease-in-out;
 }
 
 .item {
