@@ -63,3 +63,15 @@
     width: auto;
     height: 100%;
 }
+
+@media (min-width: 320px) and (max-width: 568px)
+{
+    #art, #photo
+    {
+        display: flex;
+    }
+    #artBody, #photoBody {
+        height: 38%;
+        width: auto;
+    }
+}
