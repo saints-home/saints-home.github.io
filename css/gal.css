@@ -60,4 +60,6 @@
 #art, #photo
 {
     position: relative;
+    width: auto;
+    height: 100%;
 }
