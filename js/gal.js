@@ -9,7 +9,6 @@ function openArt() {
     artBody.style.display = "flex";
     var pb = document.getElementById('artBody');
     pb.style.height = document.body.clientHeight;
-    pb.style.width = "auto";
 
     toArt = 0;
     var objArtBody = document.getElementById("artBody");
@@ -47,7 +46,6 @@ function openPhotu() {
     artBody.style.display = "none";
     var pb = document.getElementById('photoBody');
     pb.style.height = document.body.clientHeight;
-    pb.style.width = "auto";
 
     toPhoto = 0;
     var objPhotoBody = document.getElementById("photoBody");

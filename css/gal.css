@@ -3,6 +3,8 @@
     margin: auto;
     opacity: 1;
     transition: 0.5s;
+    width: auto;
+    height: 100%;
 }
 
 #boxButtons {
@@ -25,7 +27,6 @@
     border-bottom-left-radius: 25px;
     text-align: center;
     transition: 0.25s;
-    padding-top: 4px;
 }
 
 .buttonPrev {
@@ -41,7 +42,6 @@
     border-bottom-right-radius: 25px;
     text-align: center;
     transition: 0.25s;
-    padding-top: 4px;
 }
 
 .buttonNext:hover, .buttonPrev:hover {
@@ -64,36 +64,25 @@
     height: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 568px)
+@media (min-width: 320px) and (max-width: 414px) 
 {
     #art, #photo
     {
         display: flex;
     }
     #artBody, #photoBody {
-        height: 38%;
-        width: auto;
+        height: auto;
+        width: 100%;
     }
 }
-@media (min-width: 768px)
+@media (width: 768px)
 {
     #art, #photo
     {
         display: flex;
     }
     #artBody, #photoBody {
-        height: 50%;
-        width: auto;
-    }
-}
-@media (min-width: 1024px)
-{
-    #art, #photo
-    {
-        display: flex;
-    }
-    #artBody, #photoBody {
-        height: 88.5%;
-        width: auto;
+        height: auto;
+        width: 100%;
     }
 }
