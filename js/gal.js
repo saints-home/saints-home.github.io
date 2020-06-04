@@ -1,7 +1,7 @@
 //Функции управления Арт-иллюстрациями
 var art = ["image/art/1.jpg",
 "image/art/2.jpg",
-"https://s128sas.storage.yandex.net/rdisk/6ea32d11388dd988220fe365e396fba065b0f4bcd7021470e829b11262a1b78c/5ed82cce/svjkFWIJaym4ZJTmjZm6q-65WJsFKv8E6I2pTAAqN_0600axBLWaJPsEUssqSEmRHh0-O_kgDvaG22l522tu5g==?uid=91381758&filename=1010131.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&owner_uid=91381758&fsize=308958&media_type=image&etag=5f31e1178ee480e06c358bdbdfc7ad7a&hid=205c94e1edaa5cb2285e1be7978cfc84&rtoken=2Rr05ds6blME&force_default=yes&ycrid=na-614219153a6831b1eb464bfaff779bd3-downloader11e&ts=5a736119b0d40&s=7c0d606d642247064505bd4dfa5c9a438c70dc71d4c2df466f8144294505d2dd&pb=U2FsdGVkX1_sc2S4fMy0mqKbJ89TWBzSoIrMX0fUadqq7cshAwU2F4j7hlA8EMG_Zrg51tWxU77rEB5l7TcWFT7aUjvK9kbcEuxnCro_JzU"];
+"https://s257myt.storage.yandex.net/rdisk/7bac8a5a094a6742ca3011fa6d3119c1f202a6b18e769071f2d92f184dfb09f1/5ed8d0ad/svjkFWIJaym4ZJTmjZm6q-65WJsFKv8E6I2pTAAqN_0600axBLWaJPsEUssqSEmRHh0-O_kgDvaG22l522tu5g==?uid=0&filename=1010131.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&owner_uid=91381758&fsize=308958&hid=205c94e1edaa5cb2285e1be7978cfc84&media_type=image&etag=5f31e1178ee480e06c358bdbdfc7ad7a&rtoken=Mui5oR50jsCV&force_default=no&ycrid=na-276e71ece236a102e19a9e32d2b8e53e-downloader3h&ts=5a73fd623c540&s=c5c78b1310fbae025c53c13524b9e1edab3edff30997725a73b0c65b862f2fc9&pb=U2FsdGVkX1_lE1r229hgBCQyRO9pbtt0EBG6UmyyRzZRLndV2rt4nKCoXs2x3BElhQ695lcXG_A8lmALej_xeyMv_eXJfy5anHA4ECqT_tE"];
 var toArt = 0;
 
 function openArt() {
