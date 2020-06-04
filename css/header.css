@@ -8,10 +8,11 @@
     height: 120px;
     display: block;
     align-items: center;
-    background-color: #33333385;
+    background-color: #bbbbbb85;
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
     z-index: 10;
+    box-shadow: 0px 0px 10px 2px #bbbbbbbd;
 }
 
 .Saints-home-page {
@@ -22,7 +23,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: #000000;
+    color: black;
     text-decoration: none;
     background-color: transparent;
     border-radius: 5px;
@@ -83,7 +84,6 @@
         height: 120px;
         display: block;
         align-items: center;
-        background-color: #33333385;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         z-index: 10;

@@ -17,13 +17,13 @@
 
 .item {
     display: flex;
-    color: white;
+    color: black;
     min-width: 11.63%;
     height: 80px;
     align-items: center;
     font-size: 50px;
     justify-content: center;
-    background: #33333385;
+    background: #bbbbbb85;
     border-radius: 25px;
 }
 
@@ -38,14 +38,14 @@
     left: 0px;
     height: 100%;
     width: 25px;
-    background: #333333bd;
+    background: #bbbbbbbd;
     font-size: 25px;
     user-select: none;
     cursor: pointer;
     transition: 0.25s;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
 }
@@ -61,8 +61,8 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    background: #333333bd;
-    color: white;
+    background: #bbbbbbbd;
+    color: black;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
 }
