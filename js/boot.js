@@ -54,7 +54,7 @@ function boot() {
         var set = document.getElementById("submenu");
         set.style.visibility = "hidden";
         set.style.opacity = "0";
-        set.style.transition = "0.25s"
+        set.style.transition = "0s"
         var set1 = document.getElementById("topmenu");
         set1.style.background = "";
         set1.style.transition = "0.25s"
