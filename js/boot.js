@@ -39,8 +39,8 @@ function boot() {
         </div>\
     </div>\
     </footer>';
-    document.getElementById('lol').insertAdjacentHTML('beforebegin', headerCode);
-    document.getElementById('lol').insertAdjacentHTML('afterend', footerCode);
+    document.querySelector('body').insertAdjacentHTML('beforebegin', headerCode);
+    document.querySelector('body').insertAdjacentHTML('afterend', footerCode);
     $('#topmenu').hover(function() {
         var set = document.getElementById("submenu");
         set.style.background = "#333333bd"
