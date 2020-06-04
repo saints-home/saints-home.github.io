@@ -23,24 +23,23 @@
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <body id="lol" onload="test();boot();" onresize="resetPosition()">
       	<div class="boxPicViewer">
-        <div class="picViewerLeft">
-            <div class="picViewerHeader">Фотографии</div>
-            <div class="picViewer">
-                <div id="boxViewerLeft">
-                    <label class="viewPhotos" for="modal-3" onclick="openPhotu()">Открыть</label>
+            <div class="picViewerLeft">
+                <div class="picViewerHeader">Фотографии</div>
+                <div class="picViewer">
+                    <div id="boxViewerLeft">
+                        <label class="viewPhotos" for="modal-3" onclick="openPhotu()">Открыть</label>
+                    </div>
+                </div>
+            </div>
+            <div class="picViewerRight">
+                <div class="picViewerHeader">Арт-иллюстрации</div>
+                <div class="picViewer">
+                    <div id="boxViewerRight">
+                        <label class="viewPhotos" for="modal-3" onclick="openArt()">Открыть</label>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="picViewerRight">
-            <div class="picViewerHeader">Арт-иллюстрации</div>
-            <div class="picViewer">
-                <div id="boxViewerRight">
-                    <label class="viewPhotos" for="modal-3" onclick="openArt()">Открыть</label>
-                </div>
-            </div>
-        </div>
-    </div>
-
         <!-- Modal One -->
         <div class="modal">
             <input class="modal-open" id="modal-1" type="checkbox" hidden>
@@ -48,14 +47,14 @@
                 <label class="modal-overlay" for="modal-1"></label>
                 <div class="modal-dialog">
                     <div class="info">
-                    <div class="modal-header">
-                        <h2>О сайте</h2>
-                        <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+                        <div class="modal-header">
+                            <h2>О сайте</h2>
+                            <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+                        </div>
+                        <div class="modal-body">
+                            <p>Информация о сайте</p>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <p>Информация о сайте</p>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
