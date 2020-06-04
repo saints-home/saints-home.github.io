@@ -43,21 +43,21 @@ function boot() {
     document.querySelector('body').insertAdjacentHTML('afterend', footerCode);
     $('#topmenu').hover(function() {
         var set = document.getElementById("submenu");
-        set.style.background = "#333333bd"
+        set.style.background = "#333333bd";
         set.style.visibility = "visible";
         set.style.opacity = "1";
-        set.style.transition = "0.25s"
+        set.style.transition = "visibility 0s, opacity 0.25s";
         var set1 = document.getElementById("topmenu");
         set1.style.background = "#0050ff";
-        set1.style.transition = "0.25s"
+        set1.style.transition = "0.25s";
     }, function() {
         var set = document.getElementById("submenu");
         set.style.visibility = "hidden";
         set.style.opacity = "0";
-        set.style.transition = "0s"
+        set.style.transition = "visibility 0s, opacity 0s";
         var set1 = document.getElementById("topmenu");
         set1.style.background = "";
-        set1.style.transition = "0.25s"
+        set1.style.transition = "0s";
       });
       document.querySelector('body').style.display = "block";
    }
