@@ -59,4 +59,5 @@ function boot() {
         set1.style.background = "";
         set1.style.transition = "0.25s"
       });
+      document.querySelector('body').style.display = "block";
    }
