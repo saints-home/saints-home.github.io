@@ -76,13 +76,13 @@
 }
 
 #boxViewerLeft:hover, #boxViewerRight:hover{
-    background: #333333bd;
+    background: #666666bd;
     opacity: 1;
     transition: 0.2s;
 }
 
 .picViewerHeader {
-    background: #333333bd;
+    background: #666666bd;
     display: block;
     height: 50px;
     border-top-left-radius: 25px;
