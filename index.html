@@ -75,12 +75,9 @@
                             <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
                         </div>
                         <div id="formSend">
-                            <label class="labelText">ФИО</label>
-                            <input class="inputForm" id="name" onkeyup="check();" required/>
-                            <label class="labelText">Телефон</label>
-                            <input class="inputForm" id="phone" onkeyup="check();" required/>
-                            <label class="labelText">Сообщение</label>
-                            <textarea class="textAreaForm" id="message" onkeyup="check();" required></textarea>
+                            <input class="inputForm" placeholder="Фамалия Имя Отчество" id="name" onkeyup="check();" required/>
+                            <input class="inputForm" placeholder="Котакнтый телефон" id="phone" onkeyup="check();" required/>
+                            <textarea class="textAreaForm" placeholder="Сообшение" id="message" onkeyup="check();" required></textarea>
                             <label id="send" class="sendDisabled" onclick="otpravka(token,chatid,/\r?\n/);" disabled>ОТПРАВИТЬ</label>
                         </div>
                         <div id="formSendGoal">
