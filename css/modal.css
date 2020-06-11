@@ -49,7 +49,7 @@
     text-align: center;
     right: 0;
     background: #333333bf;
-    border-bottom-left-radius: 25px;
+    border-radius: 25px;
     transition: 0.25s;
 }
 
